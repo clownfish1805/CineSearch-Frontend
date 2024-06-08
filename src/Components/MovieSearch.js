@@ -77,6 +77,8 @@ const MovieSearch = () => {
     const [movies, setMovies] = useState(dummyData);
     const [error, setError] = useState('');
     const [favorites, setFavorites] = useState();
+
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
     
 
     const navigate = useNavigate();
@@ -89,7 +91,7 @@ const MovieSearch = () => {
         }
 
         try {
-            const resp = await fetch(`http://localhost:5000/api/search?name=${query}`, {
+            const resp = await fetch(`${backendUrl}/api/search?name=${query}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

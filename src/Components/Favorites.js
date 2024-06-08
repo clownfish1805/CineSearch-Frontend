@@ -6,6 +6,8 @@ function Favorite() {
     const [favorites, setFavorites] = useState([]);
     const [error, setError] = useState('');
 
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
     const navigate = useNavigate();
 
     const fetchFavorites = async () => {
@@ -15,7 +17,7 @@ function Favorite() {
             return;
         }
         try {
-            const resp = await fetch(`http://localhost:5000/api/favorite`, {
+            const resp = await fetch(`${backendUrl}/api/favorite`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

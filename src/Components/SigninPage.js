@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 const SigninPage = () => {
 
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -43,7 +45,7 @@ const SigninPage = () => {
      
      try {
        
-      const response = await fetch(`http://localhost:5000/api/signin`, {
+      const response = await fetch(`${backendUrl}/api/signin`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
