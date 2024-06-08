@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SignupPage = () => {
 
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  const backendUrl = process.env.REACT_BACKEND_URL;
 
   const navigate = useNavigate();
 
