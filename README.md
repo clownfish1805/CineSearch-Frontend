@@ -22,3 +22,6 @@ This is a movie library web application built using React for the frontend. It a
 2. Navigate to the project directory<br>
 3. Install dependencies<br>
 4. Start the development server with command **npm start**<br>
+
+## Backend
+https://github.com/clownfish1805/CineSearch-Backend
