@@ -121,7 +121,7 @@ const MovieSearch = () => {
         }
         console.log(JSON.stringify(movie));
         try {
-            const resp = await fetch(`http://localhost:5000/api/favorite`, {
+            const resp = await fetch(`${backendUrl}/api/favorite`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

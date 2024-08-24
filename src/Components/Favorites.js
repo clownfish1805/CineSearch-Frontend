@@ -7,6 +7,7 @@ function Favorite() {
     const [error, setError] = useState('');
 
     const backendUrl = process.env.REACT_BACKEND_URL;
+    
 
     const navigate = useNavigate();
 
