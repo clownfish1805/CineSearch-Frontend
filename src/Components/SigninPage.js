@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BiSolidCameraMovie } from 'react-icons/bi';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
@@ -122,7 +122,7 @@ const SigninPage = () => {
                 <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
                 </div>
                 <div>
-                  <p>Dont't have an account ? <a href='/signup'>Sign Up</a></p>
+                  <p>Don't have an account? <Link to='/signup'>Sign Up</Link></p>
                 </div>
             </form>
           </div>
