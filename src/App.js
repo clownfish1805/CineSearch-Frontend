@@ -1,9 +1,6 @@
 import './App.css';
-import { useEffect, useState } from 'react';
 import React from 'react';
-
 import Favorites from './Components/Favorites';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MovieSearch from './Components/MovieSearch';
 import SignupPage from './Components/SignupPage';

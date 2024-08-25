@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BiHeart, BiHome, BiSolidCameraMovie, BiUser } from 'react-icons/bi';
+import { BiSolidCameraMovie } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 
 

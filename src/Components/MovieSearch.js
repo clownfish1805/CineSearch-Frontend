@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BiHeart, BiHome, BiSolidCameraMovie, BiUser } from "react-icons/bi";
 
@@ -76,7 +75,7 @@ const MovieSearch = () => {
     const [query, setQuery] = useState('');
     const [movies, setMovies] = useState(dummyData);
     const [error, setError] = useState('');
-    const [favorites, setFavorites] = useState();
+    
 
     const backendUrl = process.env.REACT_BACKEND_URL;
     

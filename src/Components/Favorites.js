@@ -41,7 +41,7 @@ function Favorite() {
 
     useEffect(() => {
         fetchFavorites();
-    }, []);
+    }, [fetchFavorites]);
 
     const handlesignout = () => {
         localStorage.removeItem('token');
