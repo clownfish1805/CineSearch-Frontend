@@ -1,5 +1,9 @@
 # Movie's Seach Web App
 
+## Deployed link 
+
+https://master--cinesearch-frontend.netlify.app/
+
 ## Overview
 
 This is a movie library web application built using React for the frontend. It allows users to sign in or sign up, search for movies, and add lists of movies to favorites.
